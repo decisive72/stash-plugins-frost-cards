@@ -1,4 +1,5 @@
 name: Frost Cards
+# requires: frost
 description: Companion plugin for the Frost theme
 version: 0.1.0
 ui:
