@@ -1,0 +1,114 @@
+.scene-card.grid-card.card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0;
+    overflow: visible !important;
+    padding: 0 !important;
+    transition: transform 0.15s ease;
+}
+
+.scene-card.grid-card.card:hover {
+    transform: translateY(-2px);
+}
+
+.scene-card .video-section.thumbnail-section {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.scene-card .video-section.thumbnail-section>a {
+    display: block;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #111;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.scene-card .scene-specs-overlay {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 2px;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.scene-card .overlay-duration {
+    background-color: var(--bg-frost-thin);
+    backdrop-filter: blur(20px) saturate(180%);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding: 1px 5px;
+    border-radius: 3px;
+}
+
+.scene-card .overlay-resolution {
+    background-color: var(--bg-frost-thin);
+    backdrop-filter: blur(20px) saturate(180%);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 3px;
+}
+
+.scene-card .overlay-filesize {
+    display: none;
+}
+
+.scene-card .progress-bar {
+    bottom: 0;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 5;
+    border-radius: 0;
+}
+
+.scene-card .progress-bar .progress-indicator {
+    background: #0d6efd;
+}
+
+.scene-card .card-section {
+    padding: 8px 0 0 0;
+    background: transparent;
+    border: none;
+}
+
+.scene-card .card-section-title {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    margin: 0 0 3px 0;
+    color: var(--text-primary, #fff);
+}
+
+.frost-card__meta {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    & > span {
+        font-size: 0.85rem;
+        line-height: 1.6rem;
+        font-weight: 400;
+        color: var(--text-secondary, #aaa);
+    }
+}
+
+.frost-card__performers .fa-icon {
+    width: 0.85rem;
+    height: 0.85rem;
+}
+
+.scene-card__date:not(.frost-card__date) {
+    display: none;
+}
