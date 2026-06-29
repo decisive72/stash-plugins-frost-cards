@@ -96,7 +96,8 @@
     flex-direction: row;
     gap: 4px;
     align-items: center;
-    & > span {
+
+    &>span {
         font-size: 0.85rem;
         line-height: 1.6rem;
         font-weight: 400;
@@ -111,4 +112,23 @@
 
 .scene-card__date:not(.frost-card__date) {
     display: none;
+}
+
+.frost-card__performers>*,
+.frost-card__tags>* {
+    margin: 0 .2rem;
+}
+
+.scene-card .card-section-title.flex-aligned:has(.scene-group-scene-number) {
+    flex-wrap: wrap;
+
+    & .scene-group-scene-number {
+        display: block;
+        order: -1;
+        flex: 1 0 100%;
+
+        text-align: left;
+        filter: brightness(0.8);
+        font-size: 0.9rem;
+    }
 }
