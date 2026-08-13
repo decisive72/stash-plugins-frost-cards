@@ -4,7 +4,8 @@ description: Companion plugin for the Frost theme
 version: 0.1.0
 ui:
   css:
-    - frost-cards.css
+    - styles/scene-card.css
+    # - styles/studio-card.css
   javascript:
     - frost-cards.js
   requires:

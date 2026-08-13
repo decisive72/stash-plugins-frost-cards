@@ -92,22 +92,21 @@
 }
 
 .frost-card__meta {
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-    align-items: center;
+    margin-bottom: 3px;
 
-    &>span {
-        font-size: 0.85rem;
-        line-height: 1.6rem;
-        font-weight: 400;
-        color: var(--text-secondary, #aaa);
+    &>div {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        align-items: center;
+
+        &>span {
+            font-size: 0.85rem;
+            line-height: 1.6rem;
+            font-weight: 400;
+            color: var(--text-secondary, #aaa);
+        }
     }
-}
-
-.frost-card__performers .fa-icon {
-    width: 0.85rem;
-    height: 0.85rem;
 }
 
 .scene-card__date:not(.frost-card__date) {
@@ -115,7 +114,8 @@
 }
 
 .frost-card__performers>*,
-.frost-card__tags>* {
+.frost-card__tags>*,
+.frost-card__o-count>* {
     margin: 0 .2rem;
 }
 
