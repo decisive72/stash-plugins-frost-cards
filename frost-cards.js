@@ -42,7 +42,7 @@
                 React.createElement("span", { className: "frost-card__o-count" },
                     React.createElement(
                         "svg",
-                        { className: "svg-inline--fa frost-card__icon", ariaHidden: "true", viewBox: "0 0 36 36" },
+                        { className: "svg-inline--fa frost-card__icon", "aria-hidden": "true", viewBox: "0 0 36 36" },
                         React.createElement(
                             "path",
                             {
@@ -75,7 +75,7 @@
                     React.createElement("span", { className: "frost-card__meta-sep" }, "•"),
                     date &&
                     React.createElement("span", { className: "scene-card__date frost-card__date" }, date),
-                    display.length === 1 &&
+                    (studio || date) && display.length === 1 &&
                     React.createElement("span", { className: "frost-card__meta-sep" }, "•"),
                     display.length === 1 && display[0]
                 ),
